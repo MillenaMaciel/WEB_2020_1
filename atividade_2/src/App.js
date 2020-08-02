@@ -9,7 +9,7 @@ import OutraArena from './components/questao3/OutraArena';
 import Hero4 from './components/questao4/Hero4';
 import Enemy4 from './components/questao4/Enemy4';
 import NovaArena from './components/questao4/NovaArena'
-import Questao5 from './components/Questao5';
+import Questao5 from './components/questao5/Questao5';
 
 
 function App() {
