@@ -1,6 +1,9 @@
 const DisciplinaModel = require('../models/DisciplinaModel')
-let disciplinas = [{ _id: 0, nome: 'Estrutura de dados', curso: 'engenharia da computação', capacidade: 30 }]
-let _id = 0
+let disciplinas = [
+    { _id: 0, nome: 'ED', curso: 'EC', capacidade: 30 },
+    { _id: 1, nome: 'EDA', curso: 'CC', capacidade: 30 }
+]
+let _id = 2
 class DisciplinaService {
     static register(data) {
         let disciplina = new DisciplinaModel(
@@ -23,11 +26,12 @@ class DisciplinaService {
                 e.nome = data.nome
                 e.curso = data.curso
                 e.capacidade = data.capacidade
+                return e
             }
-            return e
         }
         return null
     }
+
 
     static delete(_id) {
         for (let i = 0; i < disciplinas.length; i++) {
